@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/score"
+            android:text="Score:"
+            android:layout_margin="1dp"
+            android:padding="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/scroreview"
+            android:layout_margin="1dp"
+            android:padding="1dp"
+            android:layout_toEndOf="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/over_view"
+            android:layout_below="@+id/score"
+            android:layout_margin="1dp"
+            android:padding="1dp"
+            android:text="Overs:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/over_score"
+            android:layout_margin="1dp"
+            android:padding="1dp"
+            android:layout_toEndOf="@+id/over_view"
+            android:layout_below="@+id/scroreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/run_view"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:text="0"
+            android:textSize="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="Runs"
+            android:layout_below="@+id/run_view"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="800dp"
+        android:paddingEnd="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/square_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <Button
+
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Bowl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+
+
+</LinearLayout>
